@@ -3,4 +3,7 @@ which includes a dynamic blog via Markdown.
 
 Project for M1 - Media Programming at HTW Berlin
 
-Test
+
+git add .
+git commit -m "added license file"
+git push -u origin master - 
