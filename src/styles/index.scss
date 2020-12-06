@@ -21,7 +21,9 @@ html {
 
 //Page style
 body {
-  background-color: $gray-lighter;
+//  background-color: $gray-lighter;
+margin: 0px;
+
 }
 article,
 aside,
@@ -100,7 +102,9 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-
+img{
+  max-width: 100%;
+}
 
 @media only screen and (max-width: 940px) {
   body {

@@ -1,0 +1,10 @@
+@import "index.scss";
+.footer{
+    //background: white !important;
+    height: 50px;
+    z-index: 10;
+    border-top: 1px solid $gray-light;
+    margin-top: 2rem;
+    max-width: 61rem;
+    margin: 0 auto;
+}

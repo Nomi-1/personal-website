@@ -7,10 +7,8 @@ import layoutStyle from "../styles/layout.module.scss"
 const Layout = props => {
   return (
     <div className={layoutStyle.globalLayout}>
-      <div className={layoutStyle.content}>
-        <Header></Header>
-        {props.children}
-      </div>
+      <Header></Header>
+      <div className={layoutStyle.content}>{props.children}</div>
       <Footer></Footer>
     </div>
   )
