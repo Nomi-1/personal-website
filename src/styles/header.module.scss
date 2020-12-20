@@ -1,35 +1,38 @@
-@import "index.scss";
-
+@import "boilerplate.scss";
+.position {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: white;
+  width: 100%;
+}
 .menuLevelNull {
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
   //border-bottom: 1px solid $color-primary;
   border-bottom: 1px solid $gray-light;
   //margin-bottom: 3rem;
+
   nav {
     display: flex;
     //justify-content: flex-start;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    max-width: 61rem;
+    max-width: $content-width;
     margin: 0 auto;
-    h1, h1 a {
+    h2,
+    h2 a {
       //flex-basis: 100%;
       flex-basis: auto;
       margin-bottom: 0px;
       font-size: 2.5rem;
-      color: rgba(white, 0);
-      font-weight: 500;
+      color: $color-primary;
+      font-weight: 400;
       font-size: 2.5rem;
       line-height: 2rem;
-      -webkit-text-stroke: 1px $color-primary;
-      strong {
-        color:  $color-primary;
-        font-weight: 500;
-        font-size: 2.5rem;
-        line-height: 2rem;
-        -webkit-text-stroke: 1px $color-primary;
-      }
+      // -webkit-text-stroke: 1px $color-primary;
+      text-transform: uppercase;
       a {
         font-weight: 300;
         text-transform: uppercase;
@@ -40,13 +43,14 @@
     }
     ul {
       // justify-content: left;
-      justify-content: space-betweens;
+     justify-content: space-between;
+    //  justify-content: center;
       align-items: center;
       align-content: center;
       display: flex;
       text-align: right;
-      //flex-basis: 100% ;
-      flex-basis: auto;
+      flex-basis: 100%;
+      //flex-basis: auto;
       padding: 0px;
       li {
         display: flex;
@@ -55,16 +59,32 @@
           color: $gray-dark;
           text-decoration: none;
           font-weight: 400;
-          //padding: 10px 5px;
-          // border: 1px solid $gray-lighter;
-          //border-radius: 5px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
           transition: $transition-base;
+          position: relative;
+          font-size: 1.2rem;
+          &:before {
+            content: "";
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transition: $transition-base;
+            transform: translateX(-50%);
+            background: $color-primary;
+            border-radius: 100%;
+            opacity: 0;
+          }
+
           &:hover {
-            // border: 1px solid $color-primary;
-            // border-radius: 5px;
             color: $color-primary;
             text-decoration: none;
             font-weight: 400;
+            &:before {
+              opacity: 1;
+            }
           }
         }
         &:not(:first-child) {
@@ -80,6 +100,10 @@
         //border: 1px solid $color-primary;
         border-radius: 5px;
         font-weight: 400;
+
+        &:before {
+          opacity: 1;
+        }
       }
     }
   }

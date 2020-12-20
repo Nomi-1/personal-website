@@ -1,10 +1,32 @@
-@import "index.scss";
-.footer{
-    //background: white !important;
-    height: 50px;
-    z-index: 10;
-    border-top: 1px solid $gray-light;
-    margin-top: 2rem;
-    max-width: 61rem;
-    margin: 0 auto;
+@import "boilerplate.scss";
+.footer {
+  //background: white !important;
+  height: 50px;
+  z-index: 10;
+  border-top: 1px solid $gray-light;
+  margin-top: 2rem;
+  max-width: 61rem;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    flex-basis: auto;
+  }
+}
+.social {
+  flex-basis: auto;
+  a:not(:last-child) {
+    margin-right: 1rem;
+  }
+  svg {
+    font-size: 2.5rem;
+    fill: $gray-light;
+    transition: $transition-base;
+
+    &:hover {
+      fill: $color-primary;
+    }
+  }
 }
