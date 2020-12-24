@@ -55,6 +55,7 @@ h6 {
   font-weight: 700;
   flex-basis: 100%;
   text-align: left;
+  width: 100%
 }
 
 h1 {
@@ -87,6 +88,9 @@ p {
   line-height: 1.7rem;
   color: $gray-darker;
   font-weight: 300;
+  text-align: justify;
+ // width: 100%;
+ margin: 0px;
 }
 a {
   text-transform: none;
@@ -127,7 +131,7 @@ img {
 @mixin page-width {
   //max-width: 61rem;
   width: $content-width;
-  margin: 0 auto;
+  margin: $horizontal-margin auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;

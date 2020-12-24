@@ -11,6 +11,7 @@ const Footer = () => {
       site {
         siteMetadata {
           description
+          title
         }
       }
     }
@@ -18,7 +19,7 @@ const Footer = () => {
   return (
     <footer>
       <div className={footerStyle.footer}>
-        <p>Futher information {data.site.siteMetadata.description}</p>
+        <p>Contact me {data.site.siteMetadata.title} – {data.site.siteMetadata.description}</p>
         <div className={footerStyle.social}>
           <a href="https://github.com/Nomi-1" target="_blank" rel="noreferrer" aria-label="GitHub"><FaGithub /></a>
           <a href="https://www.linkedin.com/in/naomi-schoppa-a355381ba/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>

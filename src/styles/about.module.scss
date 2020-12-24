@@ -1,0 +1,90 @@
+@import "boilerplate.scss";
+
+.darkstyle {
+  @include darkstyle;
+  @include columns;
+
+  .inner {
+    @include page-width;
+    margin: 0;
+    padding-top: $horizontal-margin;
+    padding-bottom: 2rem;
+    align-items: inherit;
+    flex-direction: column;
+    min-height: 70vh;
+    justify-content: flex-end;
+    width: calc(61rem / 2);
+    overflow: visible;
+    &:first-child {
+      margin-left: calc((100% / 2) - (#{$content-width} / 2));
+      flex-basis: calc(50% - ((100% / 2) - (#{$content-width} / 2)));
+      padding-left: 0;
+      * {
+        margin: 0;
+      }
+      strong {
+        color: $color-primary;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+     /* &:before {
+        content: "";
+        width: 30rem;
+        height: 30rem;
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        border: 1px solid rgba(white, 0.09);
+        transform: rotate(45deg) translateX(-50%);
+        z-index: 1;
+      }*/
+    }
+    &:nth-child(2) {
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      flex: 1 0 auto;
+    }
+  }
+}
+.section {
+  flex-direction: column;
+  @include page-width;
+  h1 {
+    margin: 0;
+  }
+  h2 {
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: $color-primary;
+  }
+  p{
+    width: 100%;
+  }
+}
+.skillicon {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 2rem;
+  &:not(:last-child){margin: 2rem 0;}
+  svg {
+    font-size: 2.5rem;
+    fill: $gray-light;
+    transition: $transition-base;
+    padding: 1rem;
+    width: calc((100% / 5));
+    background: $gray-lighter;
+    border-radius: 5px;
+    &:not(:last-child){
+      margin-right: 2rem;
+    }
+    &:hover {
+      fill: $color-primary;
+      background: $gray-light;
+
+    }
+  }
+}
