@@ -55,7 +55,7 @@ h6 {
   font-weight: 700;
   flex-basis: 100%;
   text-align: left;
-  width: 100%
+  width: 100%;
 }
 
 h1 {
@@ -89,8 +89,7 @@ p {
   color: $gray-darker;
   font-weight: 300;
   text-align: justify;
- // width: 100%;
- margin: 0px;
+  margin: 0px;
 }
 a {
   text-transform: none;
@@ -98,6 +97,7 @@ a {
   font-weight: 300;
   transition: $transition-base;
   text-decoration: none;
+  font-size: 1.1rem;
   &:hover {
     font-weight: 300;
     text-decoration: underline;
@@ -113,9 +113,10 @@ table {
 img {
   max-width: 100%;
 }
-@mixin darkstyle{
+
+//Mix in Libary
+@mixin darkstyle {
   background: black;
-  //height: 50vh;
   p,
   a,
   h1,
@@ -129,21 +130,19 @@ img {
 }
 
 @mixin page-width {
-  //max-width: 61rem;
   width: $content-width;
   margin: $horizontal-margin auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  //flex-direction: column;
 }
 
 @mixin columns {
   display: flex;
   flex-direction: initial;
   justify-content: space-between;
-  >.inner{
+  > .inner {
     flex-basis: calc(50% - 2rem);
     flex-grow: 0;
     flex-shrink: 0;
@@ -153,7 +152,7 @@ img {
   }
 }
 
-@mixin unequal-columns{
+@mixin unequal-columns {
   .containerFlex {
     flex-basis: calc(30% - 2rem);
     flex-grow: 0;
@@ -165,7 +164,6 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
   }
   .containerStatic {
     flex: 1 1 auto;
@@ -173,6 +171,7 @@ img {
   }
 }
 
+//Resposive Settings
 @media only screen and (max-width: 940px) {
   body {
     background: darkviolet;
@@ -186,5 +185,86 @@ img {
     background: pink;
     width: 100%;
     padding: 1rem;
+  }
+}
+
+//ACCORDION
+.accordionTrigger {
+  border-radius: 5px;
+  overflow: hidden;
+  button {
+    width: 100%;
+    border: 1px solid $gray-lighter;
+    background: white;
+    border-radius: 0;
+    cursor: pointer;
+    transition: $transition-base;
+    &:focus {
+      outline: none;
+    }
+  }
+  .accordionInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  p {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+  span {
+    transition: $transition-base;
+    color: $color-primary;
+    transform: rotate(90deg);
+  }
+  &:hover,
+  &.active {
+    button {
+      border: none;
+      border-radius: 0;
+      background: $gray-lighter;
+      border: 1px solid $gray-lighter;
+    }
+    span {
+      transform: rotate(0deg);
+    }
+  }
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+.accordionContent {
+  height: 0;
+  opacity: 0;
+  display: flex;
+  transition: $transition-base;
+  overflow: hidden;
+  .accordionInner {
+    margin-bottom: 0rem;
+    padding: 1rem;
+    border: 1px solid $gray-lighter;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  &.active {
+    height: 250px;
+    opacity: 1;
+    .accordionInner {
+      margin-bottom: 1rem;
+    }
+  }
+}
+//ACCORDION - Last Child options
+.accordion:last-child {
+  .accordionTrigger {
+    margin-bottom: 0;
+    &.active {
+      margin-bottom: 1rem;
+    }
+  }
+  .accordionContent .accordionInner {
+    margin-bottom: 0rem;
   }
 }

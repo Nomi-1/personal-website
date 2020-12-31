@@ -1,0 +1,16 @@
+@import "boilerplate.scss";
+
+.contact{
+    @include page-width;
+    flex-direction: column;
+    h1{
+        margin-bottom: 0px;
+    }
+    h2{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    a{
+        width: 100%;
+    }
+}

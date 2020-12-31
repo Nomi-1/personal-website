@@ -28,17 +28,6 @@
         text-transform: uppercase;
         letter-spacing: 1px;
       }
-     /* &:before {
-        content: "";
-        width: 30rem;
-        height: 30rem;
-        position: absolute;
-        left: 50%;
-        bottom: 0%;
-        border: 1px solid rgba(white, 0.09);
-        transform: rotate(45deg) translateX(-50%);
-        z-index: 1;
-      }*/
     }
     &:nth-child(2) {
       background-position: top;
@@ -72,7 +61,7 @@
   &:not(:last-child){margin: 2rem 0;}
   svg {
     font-size: 2.5rem;
-    fill: $gray-light;
+    fill: $color-primary;
     transition: $transition-base;
     padding: 1rem;
     width: calc((100% / 5));
@@ -80,11 +69,6 @@
     border-radius: 5px;
     &:not(:last-child){
       margin-right: 2rem;
-    }
-    &:hover {
-      fill: $color-primary;
-      background: $gray-light;
-
     }
   }
 }

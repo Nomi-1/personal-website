@@ -1,14 +1,18 @@
 import React from "react"
 import Layout from "../components/layout"
 import Head from '../components/head'
+import contactStyle from "../styles/contact.module.scss"
 
 
 const Contact = () => {
   return (
     <Layout>
       <Head title="Contact" />
+      <div className={contactStyle.contact}>
       <h1>This is my contact page</h1>
-      <a href="tel:0151 13241234">Call me here</a>
+      <h2>This page is literally useless. But nevertheless it will exist.</h2>
+      <a href="mailto:schoppanaomi94@gmail.com">Text me here</a>
+      </div>
     </Layout>
   )
 }

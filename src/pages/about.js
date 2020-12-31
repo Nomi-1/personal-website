@@ -1,6 +1,5 @@
-import React from "react"
+import React, { useState } from "react"
 import aboutStyle from "../styles/about.module.scss"
-import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import Head from "../components/head"
 import bewerbung from "../images/bewerbung_1.jpg"
@@ -9,13 +8,11 @@ import { FaCss3 } from "@react-icons/all-files/fa/FaCss3"
 import { FaJs } from "@react-icons/all-files/fa/FaJs"
 import { FaHtml5 } from "@react-icons/all-files/fa/FaHtml5"
 import { FaReact } from "@react-icons/all-files/fa/FaReact"
-import { FaFigma } from "@react-icons/all-files/fa/FaFigma"
-import { FaSketch } from "@react-icons/all-files/fa/FaSketch"
-import { FaAdobe } from "@react-icons/all-files/fa/FaAdobe"
-import { FaPhotoVideo } from "@react-icons/all-files/fa/FaPhotoVideo"
-import { FaBook } from "@react-icons/all-files/fa/FaBook"
+import Accordion from "../components/accordion"
 
 const About = () => {
+  const [active, setActive] = useState("Static Website")
+
   return (
     <Layout>
       <Head title="About" />
@@ -49,6 +46,7 @@ const About = () => {
           experiences, goals and projects are summarized under the respective
           languages.
         </p>
+
         <div className={aboutStyle.skillicon}>
           <FaSass />
           <FaCss3 />
@@ -56,13 +54,35 @@ const About = () => {
           <FaHtml5 />
           <FaReact />
         </div>
-        <p>Ouside programming experience &amp; interests</p>
-        <div className={aboutStyle.skillicon}>
-          <FaFigma />
-          <FaSketch />
-          <FaAdobe />
-          <FaPhotoVideo />
-          <FaBook />
+        <div className={aboutStyle.accordionOne}>
+          <Accordion
+            title="Static Website"
+            active={active}
+            setActive={setActive}
+            content="
+        1. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+          />
+          <Accordion
+            title="Preset Development"
+            active={active}
+            setActive={setActive}
+            content="
+          2. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+          />
+          <Accordion
+            title="Template Development"
+            active={active}
+            setActive={setActive}
+            content="
+          3. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+          />
+          <Accordion
+            title="UX"
+            active={active}
+            setActive={setActive}
+            content="
+        4. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+          />
         </div>
       </div>
     </Layout>

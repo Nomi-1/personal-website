@@ -6,7 +6,6 @@ import Head from "../components/head"
 import indexStyle from "../styles/index.module.scss"
 import { FaChevronRight } from "@react-icons/all-files/fa/FaChevronRight"
 import background from "../images/background_home.jpg"
-import backgroundtwo from "../images/bali.jpg"
 
 const IndexPage = props => {
   return (
@@ -26,10 +25,10 @@ const IndexPage = props => {
 
       <div className={indexStyle.white}>
         <h2>Welcome</h2>
-        <h3>to Naomis website</h3>
+        <h3>to my website</h3>
         <p>
           Hello, I am Naomi and a master student in international media
-          informatics. I also work as webdesigner &amp; webdeveloper at Sitejet.
+          informatics. I also work as webdesigner &amp; webdeveloper for Sitejet.
           <br /> <br />
           My main skills are CSS, SASS and HTML. I am also currently studying
           Java, Java Script and React. This portfolio page is created with
@@ -44,54 +43,51 @@ const IndexPage = props => {
       </div>
       <div
         className={indexStyle.darkstyle}
-       /* style={{ backgroundImage: `url(${backgroundtwo})` }}*/>
+        /* style={{ backgroundImage: `url(${backgroundtwo})` }}*/
+      >
         <div className={indexStyle.inner}>
           <h2>Design</h2>
           <h3>&amp; Development</h3>
           <div className={indexStyle.columnsthreeouter}>
+            <div className={indexStyle.threecolumns}>
+              <p>
+                <strong>Studies:</strong>
+                My Master's includes many exciting projects. I was able to gain
+                an insight into visual programming and game programming.
+                However, my specialisation is in web programming. Which is why
+                my focus is on mastering secure HTML5, CSS, SASS, JS &amp;
+                React. I have also taken a few courses in UX/UI optimisation so
+                far.
+              </p>
+              <Link to="/about">Discover more</Link>.
+            </div>
+            <div className={indexStyle.threecolumns}>
+              <p>
+                <strong>Work:</strong> My area of responsibility is the
+                creation, debugging and testing of the presets that are common
+                for a website creation. Since presets are designed for every
+                possible usecase, the creation goes into the more complex SASS
+                area. The presets can be easily adapted via parameters using
+                Sitejet's CMS.
+                <br />
+                <br />
+                In addition to this task, I work on the UX/UI optimisation of
+                the CMS and the presets. User-friendliness is always in the
+                foreground.
+              </p>
+              <Link to="/about">Discover more</Link>.
+            </div>
+            <div className={indexStyle.threecolumns}>
+              <p>
+                <strong>Privat Projects:</strong> My private projects are mostly concerned with the creation of websites. I like to try out new CMS systems and website builders. This gives me a good overview of the market and always provides me with inspiration for UX/UI solutions.
 
-          <div className={indexStyle.threecolumns}>
-            <p>
-              <strong>Studies:</strong> Mein Master umfasst viele spannende
-              Projekte. Hierbei konnte ich einen Einblick in Visual Programming
-              und Game-Programming erhalten. Allerdings liegt meine
-              Spezialisierung in der Webprogammierung. Weshalb mein Fokus darauf
-              liegt, sicheres HTML5, CSS, SASS, JS &amp; React zu beherrschen.
-              Außerdem habe ich bisher einige Kurse in UX-/UI-Optimierung
-              belegt.</p>
+                <br />
+                <br />
+                Outside of programming, I take photographs and work on smaller design projects: These include logo creation and drawings.{" "}
+              </p>
               <Link to="/about">Discover more</Link>.
+            </div>
           </div>
-          <div className={indexStyle.threecolumns}>
-            <p>
-              <strong>Work:</strong> Meine Aufgabenbereich ist die Erstellung,
-              Debuggen und die Testung von den Presets, die für eine
-              Websiteerstellung gängig sind. Da Presets für jeden Moglichen
-              usecase ausgelegt sind, geht die Erstellung in den komplexeren
-              SASS Bereich. Die Presets können via Parameter einfach über das
-              CMS von Sitejet angepasst werden.
-              <br />
-              <br />
-              Neben dieser Aufgabe befasse ich mich mit UX-/UI-Optmierung des
-              CMS und der Presets. Hierbei steht die Userfreundlichkeit stets im
-              Vordergrund. 
-            </p>
-            <Link to="/about">Discover more</Link>.
-          </div>
-          <div className={indexStyle.threecolumns}>
-            <p>
-              <strong>Privat Projects:</strong> Meine Privatprojekte
-              beschäftigen sich größenteils mit der Erstellung von Websites.
-              Hierbei probieren ich gerne neue CMS-Systeme und Websitebuilder.
-              Dadruch hat man einen guten Marktüberblick und bekommt stets
-              inspirationen für UX-/UI-Lösungen.
-              <br />
-              <br />
-              Außerhalb der Progammierung fotografiere ich und widme mich noch
-              kleineren Design Projekten: Darunter fallen Logoerstellungen,
-              Zeichnungen und Fotografien. </p>
-              <Link to="/about">Discover more</Link>.
-          </div>
-        </div>
         </div>
       </div>
     </Layout>
