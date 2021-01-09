@@ -10,7 +10,7 @@ jobs:
 #ich möchste auf Betriebssystem ubuntu arbeiten  unbunu console geöffnet
       - uses: actions/checkout@v2
       - run: npm install
-      - run: npm run build --prefix-path
+      - run: npm run build --prefix-paths
 #Release to Gh-Pages
       - run: git config user.name github-actions
       - run: git config user.email github-actions@github.com
