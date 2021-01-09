@@ -8,4 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 #ich möchste auf Betriebssystem ubuntu arbeiten  unbunu console geöffnet
+      - uses: actions/checkout@v2
       - run: ls -l
