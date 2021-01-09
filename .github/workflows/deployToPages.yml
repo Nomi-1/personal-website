@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-lastest
     steps:
 #ich möchste auf Betriebssystem ubuntu arbeiten  unbunu console geöffnet
-      run: ls -l
+      - run: ls -l
