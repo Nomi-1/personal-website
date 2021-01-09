@@ -1,0 +1,77 @@
+@import "boilerplate.scss";
+.page {
+  @include page-width;
+  flex-flow: column wrap;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 1 0 100%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $gray-light;
+    margin-bottom: 2rem;
+    h1 {
+      font-size: 1.75rem;
+      line-height: 2rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 0px;
+    }
+    p {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      flex-basis: auto;
+      width: auto;
+    }
+  }
+  h2,
+  p {
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+  }
+  ol {
+    padding-left: 1rem;
+    margin: 1rem 0;
+  }
+  h2 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: $color-primary;
+    margin-bottom: 0px;
+  }
+}
+.button {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  button {
+    background: white;
+    padding: 10px 5px;
+    border-radius: 0px;
+    color: black;
+    border: 1px solid black;
+    transition: $transition-base;
+    a {
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.8rem;
+    }
+    &:hover,
+    &.active {
+      background: black;
+      border: 1px solid black;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}

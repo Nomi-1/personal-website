@@ -27,8 +27,8 @@ const IndexPage = props => {
         <h2>Welcome</h2>
         <h3>to my website</h3>
         <p>
-          Hello, I am Naomi and a master student in international media
-          informatics. I also work as webdesigner &amp; webdeveloper for Sitejet.
+          Hello, I'm Naomi and I'm a Master's student in &raquo;<a href="https://imi-master.htw-berlin.de/" target="_blank" rel="noreferrer" aria-label="HTW">Media
+          Informatics</a>&laquo; at the HTW in Berlin. Besides my studies I work as a webdesigner &amp; webdeveloper for <a href="https://www.sitejet.io/en" target="_blank" rel="noreferrer" aria-label="Sitejet">Sitejet</a>.
           <br /> <br />
           My main skills are CSS, SASS and HTML. I am also currently studying
           Java, Java Script and React. This portfolio page is created with
@@ -43,7 +43,6 @@ const IndexPage = props => {
       </div>
       <div
         className={indexStyle.darkstyle}
-        /* style={{ backgroundImage: `url(${backgroundtwo})` }}*/
       >
         <div className={indexStyle.inner}>
           <h2>Design</h2>
@@ -59,15 +58,14 @@ const IndexPage = props => {
                 React. I have also taken a few courses in UX/UI optimisation so
                 far.
               </p>
-              <Link to="/about">Discover more</Link>.
             </div>
             <div className={indexStyle.threecolumns}>
               <p>
-                <strong>Work:</strong> My area of responsibility is the
+                <strong>Work:</strong> My topics of responsibility is the
                 creation, debugging and testing of the presets that are common
                 for a website creation. Since presets are designed for every
-                possible usecase, the creation goes into the more complex SASS
-                area. The presets can be easily adapted via parameters using
+                possible usecase, the creation goes into more complex SASS
+                topics. The presets can be easily adapted via parameters using
                 Sitejet's CMS.
                 <br />
                 <br />
@@ -75,7 +73,6 @@ const IndexPage = props => {
                 the CMS and the presets. User-friendliness is always in the
                 foreground.
               </p>
-              <Link to="/about">Discover more</Link>.
             </div>
             <div className={indexStyle.threecolumns}>
               <p>
@@ -85,7 +82,6 @@ const IndexPage = props => {
                 <br />
                 Outside of programming, I take photographs and work on smaller design projects: These include logo creation and drawings.{" "}
               </p>
-              <Link to="/about">Discover more</Link>.
             </div>
           </div>
         </div>
@@ -95,32 +91,3 @@ const IndexPage = props => {
 }
 
 export default IndexPage
-/* <div
-          className={indexStyle.inner}
-          style={{ backgroundImage: `url(${backgroundtwo})` }}
-        ></div>
-      </div>
-        <div className={indexStyle.container}>
-        <div className={indexStyle.containerFlex}>
-          <h2>Skills</h2>
-
-          <Link to="/contact"> Contact me</Link>
-        </div>
-        <div className={indexStyle.containerStatic}>
-          <p>
-            Hello,
-            <br />
-            my name is Naomi. I am a master student in international media
-            informatics. I also work as a web developer at Sitejet.
-            <br /> <br />
-            My main skills are CSS, SASS and HTML. I am also currently studying
-            Java, Java Script and React. This portfolio page was created with
-            Gatsby as a static website.
-            <br /> <br />
-            If you want to learn more, you can visit my GitHub or the Sitejet
-            Template page for my View projects.
-            <br /> <br />
-            <Link to="/about">Learn more</Link>
-          </p>
-        </div>
-  </div> */

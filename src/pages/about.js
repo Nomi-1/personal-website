@@ -11,7 +11,7 @@ import { FaReact } from "@react-icons/all-files/fa/FaReact"
 import Accordion from "../components/accordion"
 
 const About = () => {
-  const [active, setActive] = useState("Static Website")
+  const [active, setActive] = useState("Project: Static Website")
 
   return (
     <Layout>
@@ -21,15 +21,31 @@ const About = () => {
           <p>
             <strong>What happened so far</strong> I graduated from high school
             in 2013 with focus on design. After finishing school I started my
-            bachelor studies &raquo;Media Technology &amp; Media
-            Production&laquo;, which I successfully completed in 2017.
+            bachelor studies in &raquo;
+            <a
+              href="https://www.oth-aw.de/studiengaenge-und-bildungsangebote/studienangebote/master-studiengaenge/medientechnik-und-medienproduktion/studium-medientechnik-und-medienproduktion/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="OTH Amberg"
+            >
+              Media Technology &amp; Media Production
+            </a>
+            &laquo;, which I successfully completed in 2017.
             <br />
             <br /> I gained first work experience in a Tec-Company in Berlin as
             project manager. In 2018 I started working at Websitebutler and
-            Sitejet and gained a lot of experience in webdesign. Later I
-            developed in the direction of webdevelopment. Meanwhile I'm doing my
-            master in international media informatics at the HTW Berlin. I
-            expect to complete that in 2022.
+            Sitejet and gained a lot of experience in webdesign. Later, I
+            continued my education in the field of web development. Meanwhile I
+            started my master in &raquo;
+            <a
+              href="https://imi-master.htw-berlin.de/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="HTW"
+            >
+              Media Informatics
+            </a>
+            &laquo; at the HTW in Berlin. I expect to complete that in 2022.
           </p>
         </div>
         <div
@@ -38,13 +54,12 @@ const About = () => {
         ></div>
       </div>
       <div className={aboutStyle.section}>
-        <h1>Skills</h1>
+        <h1>Projects</h1>
         <h2>&amp; Learinings</h2>
         <p>
           My main skills are CSS, HTML5 and SASS. Through my studies and in my
           own projects I also learn JavaScript, React and Java. My previous
-          experiences, goals and projects are summarized under the respective
-          languages.
+          experiences, targets and projects are summarized further down.
         </p>
 
         <div className={aboutStyle.skillicon}>
@@ -56,32 +71,32 @@ const About = () => {
         </div>
         <div className={aboutStyle.accordionOne}>
           <Accordion
-            title="Static Website"
+            title="Project: Static Website"
             active={active}
             setActive={setActive}
             content="
-        1. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+            The project was created for the course &raquo;Media Programming&laquo;. The task was to generate a static website with a static website builder. I decided to use Gatsbyjs. I would like to improve my knowledge of React. Gatsbyjs works on the basis of React, so I decided to use this tool. Programming languages: React &amp; SASS"
           />
           <Accordion
-            title="Preset Development"
+            title="Project: SASS"
             active={active}
             setActive={setActive}
             content="
-          2. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+             2. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
           />
           <Accordion
-            title="Template Development"
-            active={active}
-            setActive={setActive}
-            content="
-          3. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-          />
-          <Accordion
-            title="UX"
+            title="Project: UX"
             active={active}
             setActive={setActive}
             content="
         4. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+          />
+          <Accordion
+            title="Prospects and targets"
+            active={active}
+            setActive={setActive}
+            content="
+        5. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
           />
         </div>
       </div>

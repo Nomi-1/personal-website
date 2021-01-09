@@ -9,10 +9,8 @@
     margin: 0;
     padding-top: $horizontal-margin;
     padding-bottom: 2rem;
-    align-items: inherit;
-    flex-direction: column;
     min-height: 70vh;
-    justify-content: flex-end;
+    align-items: flex-end;
     width: calc(61rem / 2);
     overflow: visible;
     &:first-child {
@@ -37,6 +35,41 @@
       flex: 1 0 auto;
     }
   }
+  @media screen and (max-width: 940px) {
+    .inner {
+      margin: 0;
+      padding-top: $horizontal-margin;
+      padding-bottom: 2rem;
+      align-items: inherit;
+     flex-direction: column;
+      min-height: auto;
+      justify-content: flex-end;
+      &:first-child {
+        margin-left: 0rem;
+        flex-basis: calc(50% - 2rem);
+        padding: 1rem;
+      }
+      &:nth-child(2) {
+        flex: 1 0 40%;
+        height: auto;
+      }
+    }
+  }
+  @media screen and(max-width: 720px) {
+    .inner {
+      flex-wrap: wrap;
+      &:first-child {
+        padding: 1rem;
+        order: 2;
+        flex-basis: calc(100% - 2rem);
+      }
+      &:nth-child(2) {
+        flex: 0 0 calc(100% - 4rem);
+        height: 40vh;
+        order: 1;
+      }
+    }
+  }
 }
 .section {
   flex-direction: column;
@@ -49,7 +82,7 @@
     font-weight: 300;
     color: $color-primary;
   }
-  p{
+  p {
     width: 100%;
   }
 }
@@ -58,7 +91,9 @@
   justify-content: space-between;
   display: flex;
   margin-top: 2rem;
-  &:not(:last-child){margin: 2rem 0;}
+  &:not(:last-child) {
+    margin: 2rem 0;
+  }
   svg {
     font-size: 2.5rem;
     fill: $color-primary;
@@ -67,8 +102,19 @@
     width: calc((100% / 5));
     background: $gray-lighter;
     border-radius: 5px;
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-right: 2rem;
+    }
+  }
+  @media screen and(max-width: 720px) {
+     flex-wrap: wrap;
+     flex-direction: column;
+    svg {
+      width: calc((100% - 2rem));
+      &:not(:last-child) {
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+      }
     }
   }
 }

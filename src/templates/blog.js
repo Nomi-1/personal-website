@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql } from "gatsby"
-import Head from '../components/head'
-
+import { graphql, Link } from "gatsby"
+import Head from "../components/head"
+import blogpostStyle from "../styles/blogpost.module.scss"
 
 // No Solution yet to remove the slug if it is in the const,
 // because of that, we'll export it manually in a new const
@@ -31,13 +31,24 @@ But the important part here is that data with props are being passed in a uni-di
 Div: reder a html in a div
 */
 
-const Blog = ( props ) => {
+const Blog = props => {
   return (
     <Layout>
-      <Head title={ props.data.markdownRemark.frontmatter.title }/>
-       <h1>{ props.data.markdownRemark.frontmatter.title }</h1>
-       <p>{ props.data.markdownRemark.frontmatter.date }</p>
-       <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></div>
+      <Head title={props.data.markdownRemark.frontmatter.title} />
+      <div className={blogpostStyle.page}>
+        <div className={blogpostStyle.title}>
+          <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+          <p>{props.data.markdownRemark.frontmatter.date}</p>
+        </div>
+        <div className={blogpostStyle.button}>
+          <button>
+            <Link to="/blog">back to Blog</Link>
+          </button>
+        </div>
+        <div
+          dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
+        ></div>
+      </div>
     </Layout>
   )
 }

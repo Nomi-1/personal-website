@@ -13,31 +13,34 @@
     text-transform: uppercase;
     letter-spacing: 1px;
   }
+  @media screen and(max-width: 720px) {
+    flex-wrap: wrap;
+    p {
+      margin-left: 0rem;
+      padding-left: 1rem;
+    }
+  }
 }
 .blog {
   @include page-width;
   @include columns;
-  flex-wrap: wrap;
   margin-top: 0px;
   ol {
     display: flex;
     flex-basis: 100%;
     padding: 0px;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   li {
-    flex-basis: calc(50% - 1rem);
-    min-width: calc(50% - 1rem);
+    flex-basis: calc(50% - 0.5rem);
     border: 1px solid $gray-light;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
-    align-content: center;
-    margin-bottom: 1rem;
-
-    &:first-child {
-      margin-right: 1rem;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
     }
+
     div {
       padding: 1rem;
     }
@@ -57,6 +60,20 @@
         a {
           text-decoration: none;
         }
+      }
+    }
+  }
+  @media screen and(max-width: 940px) {
+    margin-top: 0px;
+  }
+  @media screen and(max-width: 720px) {
+    ol li {
+      flex-wrap: wrap;
+      flex-basis: 100%;
+
+      div {
+
+        flex-basis: 100%;
       }
     }
   }

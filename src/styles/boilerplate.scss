@@ -10,21 +10,26 @@ $font-special: "Lato";
 $transition-base: all 0.3s ease-in-out;
 $content-width: 61rem;
 $horizontal-margin: 6rem;
-// STYLE SHEET
+$horizontal-margin-md: 4rem;
 
+// STYLE SHEET
 // html-import fonts
 html {
   @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap");
   font-family: "Lato", sans-serif;
   font-family: "Open Sans", sans-serif;
-  //-ms-text-size-adjust: 100%;
-  // -webkit-text-size-adjust: 100%;
 }
 
 //Page style
 body {
-  //  background-color: $gray-lighter;
   margin: 87px 0px 0px 0px;
+  @media screen and (max-width: 940px) {
+    margin: 92px 0rem 0rem 0rem;
+  }
+  @media screen and(max-width: 720px) {
+    margin: 85px 0rem 0rem 0rem;
+
+  }
 }
 article,
 aside,
@@ -103,7 +108,9 @@ a {
     text-decoration: underline;
   }
 }
-
+ol{
+  margin: 0px;
+}
 table {
   font-size: 1.1rem;
   line-height: 1.45rem;
@@ -136,19 +143,37 @@ img {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
+  @media only screen and (max-width: 940px) {
+    width: calc(100% - 2rem);
+    margin: $horizontal-margin-md 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
 }
 
 @mixin columns {
   display: flex;
   flex-direction: initial;
   justify-content: space-between;
-  > .inner {
+   >.inner {
     flex-basis: calc(50% - 2rem);
     flex-grow: 0;
     flex-shrink: 0;
     padding: 2rem;
     overflow: hidden;
     position: relative;
+  }
+  @media screen and (max-width: 940px) {
+    flex-wrap: wrap;
+  }
+  @media screen and(max-width: 720px) {
+    flex-wrap: wrap;
+
+    >.inner {
+      flex-basis: calc(100% - 2rem);
+    }
   }
 }
 
@@ -168,23 +193,6 @@ img {
   .containerStatic {
     flex: 1 1 auto;
     padding: 2rem;
-  }
-}
-
-//Resposive Settings
-@media only screen and (max-width: 940px) {
-  body {
-    background: darkviolet;
-    width: 100%;
-    padding: 1rem;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  body {
-    background: pink;
-    width: 100%;
-    padding: 1rem;
   }
 }
 
@@ -239,7 +247,7 @@ img {
   height: 0;
   opacity: 0;
   display: flex;
-  transition: $transition-base;
+  transition: all 1s cubic-bezier(0,1,0,1);
   overflow: hidden;
   .accordionInner {
     margin-bottom: 0rem;
@@ -253,6 +261,12 @@ img {
     opacity: 1;
     .accordionInner {
       margin-bottom: 1rem;
+    }
+    @media screen and(max-width: 940px) {
+      height: 300px;
+      }
+    @media screen and(max-width: 720px) {
+    height: 500px;
     }
   }
 }

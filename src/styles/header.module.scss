@@ -8,7 +8,7 @@
   width: 100%;
 }
 .menuLevelNull {
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid $gray-light;
 
   nav {
@@ -37,7 +37,7 @@
       }
     }
     ul {
-     justify-content: space-between;
+      justify-content: space-between;
       align-items: center;
       align-content: center;
       display: flex;
@@ -94,6 +94,15 @@
           opacity: 1;
         }
       }
+    }
+  }
+  @media only screen and (max-width: 940px) {
+    padding: 1rem;
+  }
+  @media screen and(max-width: 720px) {
+  nav ul > li a {
+      font-size: 1rem;
+      letter-spacing: 0px;
     }
   }
 }
