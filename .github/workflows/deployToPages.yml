@@ -5,7 +5,7 @@ on: push
  #wenn ich auf Master pushe, dann wird es ausgeführt
 jobs: 
   build:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
 #ich möchste auf Betriebssystem ubuntu arbeiten  unbunu console geöffnet
       - run: ls -l
