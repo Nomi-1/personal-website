@@ -1,7 +1,8 @@
 name: Bild Web and deploy to GH pages
-on: push
-  #branches: 
-        #- main
+on: 
+  push:
+    branches: 
+      - main
  #wenn ich auf Master pushe, dann wird es ausgeführt
 jobs: 
   build:
