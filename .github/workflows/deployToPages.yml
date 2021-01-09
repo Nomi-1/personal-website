@@ -9,8 +9,11 @@ jobs:
     steps:
 #ich möchste auf Betriebssystem ubuntu arbeiten  unbunu console geöffnet
       - uses: actions/checkout@v2
-      - uses: enriikke/gatsby-gh-pages-action@v2
-        with:
-          access-token: ${{ secrets.GITHUB_TOKEN }}
-          deploy-branch: git-pages
-      - run: ls -l
+      - run: npm install
+      - run: npm run build
+#Release to Gh-Pages
+      - run: git config user.name github-actions
+      - run: git config user.email github-actions@github.com
+      - run: git --work-tree public add --all
+      - run: git commit -m "Automatic deployment by Github Action"
+      - run: git push origin HEAD:git-pages --force
