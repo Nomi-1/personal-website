@@ -1,0 +1,14 @@
+name: Bild Web and deploy to GH pages
+on: 
+  push: 
+      #branches: 
+        #- main
+ #wenn ich auf Master pushe, dann wird es ausgeführt
+
+ jobs: 
+   build:
+      runs-on: ubuntu-lastest
+      steps:
+#ich möchste auf Betriebssystem ubuntu arbeiten  unbunu console geöffnet
+        - run: ls -l
+
