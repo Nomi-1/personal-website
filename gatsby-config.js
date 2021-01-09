@@ -6,6 +6,7 @@
 
 module.exports = {
   /* Your site config here */
+  pathPrefix: "/personal-website",
   siteMetadata: {
     title: "Naomi Schoppa",
     description: "Design & Development",

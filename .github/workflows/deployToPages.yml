@@ -9,4 +9,8 @@ jobs:
     steps:
 #ich möchste auf Betriebssystem ubuntu arbeiten  unbunu console geöffnet
       - uses: actions/checkout@v2
+      - uses: enriikke/gatsby-gh-pages-actions@v2
+        with:
+          access-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-branch: git-pages
       - run: ls -l
