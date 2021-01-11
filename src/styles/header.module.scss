@@ -105,4 +105,9 @@
       letter-spacing: 0px;
     }
   }
+  nav ul {
+    [aria-current]:not([aria-current="false"]) {
+      letter-spacing: 0px;
+    }
+  }
 }

@@ -5,8 +5,6 @@ date: "14.01.2021"
 
 I just do a Blog
 
-![Bali](./DSC_1401.jpg)
-
 ## Topics Coverd
 
 1. Gatsby
