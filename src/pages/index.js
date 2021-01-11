@@ -50,7 +50,7 @@ const IndexPage = props => {
           <div className={indexStyle.columnsthreeouter}>
             <div className={indexStyle.threecolumns}>
               <p>
-                <strong>Studies:</strong>
+                <strong>Studies: </strong>
                 My Master's includes many exciting projects. I was able to gain
                 an insight into visual programming and game programming.
                 However, my specialisation is in web programming. Which is why
