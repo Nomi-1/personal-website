@@ -250,23 +250,25 @@ img {
   transition: all 1s cubic-bezier(0,1,0,1);
   overflow: hidden;
   .accordionInner {
+    white-space: pre-wrap;
     margin-bottom: 0rem;
     padding: 1rem;
     border: 1px solid $gray-lighter;
     overflow: hidden;
     border-radius: 5px;
   }
+
   &.active {
-    height: 250px;
+    height: 375px;
     opacity: 1;
     .accordionInner {
       margin-bottom: 1rem;
     }
     @media screen and(max-width: 940px) {
-      height: 300px;
+      height: 460px;
       }
     @media screen and(max-width: 720px) {
-    height: 500px;
+    height: 1270px;
     }
   }
 }

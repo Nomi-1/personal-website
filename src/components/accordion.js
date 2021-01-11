@@ -2,6 +2,7 @@ import React from "react"
 import "../styles/boilerplate.scss"
 
 const Accordion = ({ title, active, setActive, content }) => {
+  
   return (
     <div className="accordion">
       <div className={(active === title ? "active" : "") + " accordionTrigger"}>

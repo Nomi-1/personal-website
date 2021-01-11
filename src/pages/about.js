@@ -74,29 +74,61 @@ const About = () => {
             title="Project: Static Website"
             active={active}
             setActive={setActive}
-            content="
-            The project was created for the course &raquo;Media Programming&laquo;. The task was to generate a static website with a static website builder. I decided to use Gatsbyjs. I would like to improve my knowledge of React. Gatsbyjs works on the basis of React, so I decided to use this tool. Programming languages: React &amp; SASS"
+            content="The portfolio page was created with &raquo;gatsbyjs&laquo;. Besides Next.js, Hugo, Jekyll etc., Gatsby is a static site generator.
+            Some generators are based on Go, however my goal is to learn React, so for this project I decided to use Gatsby. 
+            Read more about it in the blogpost., This page was created with the &raquo;Hello Starter&laquo; provided by Gatsby.
+            In the beginning there were problems with the &raquo;npm-sass install&laquo;, 
+            but this could be solved well by installing SASS in general.
+
+            The handling and workaround was exciting. I learned to work with components and tried to replace JQuery applications 
+            like toggle behaviour with react commands.
+
+            Through graphql you have the possibility to output different content dynamically, which is super handy. 
+
+            For the blogposts I implemented Markdown, because further editing is easier with Markdown than with HTML.
+            The slugs are created automatically based on the file title. When you create a new blog post (.md), everything is automatically added to the blog page and a new page is created. 
+            added to the blog page and a new page is created.
+            
+            SASS was used for the style. It is generally easier to use than normal CSS - but you can read about that in the blog. 
+
+            The programming languages used in this project are React and Sass."
           />
           <Accordion
             title="Project: SASS"
             active={active}
             setActive={setActive}
-            content="
-             2. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+            content="I have been working on various SASS projects for several years. The complexity is as different as the projects themselves.
+            Even if the setup seems quite complex, it also makes sense to use SASS in all projects, also smaller projects.
+            Because in summer, the time savings, achieved through nesting and mixin is immensely high.
+           
+            SASS for presets can become very complex. Since they build presets purely on variables. The parameters are assigned via the CMS.
+            "
           />
           <Accordion
             title="Project: UX"
             active={active}
             setActive={setActive}
-            content="
-        4. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+            content="In a team of four people we develop an app interface with the UX concept from &raquo;Contextual Design&laquo; by Karen Holtzblatt. 
+
+            The concept idea arises from intensive follow up with the consumer's &raquo;method of work&laquo; in this topic. We critically question which function the user needs.
+            
+            Once the concept has been established, the team starts work on it. The interface concept goes through various steps and optimisation loops.
+            By critically questioning the usefulness of the app and the planned functions and features from step one,
+            the final product will be user-friendly and not overloaded with functions, which makes it easy to use. 
+            The interface is tested and optimised again and again during the development process, e.g. through paper prototyping.
+            
+            A detailed blog post on for this project is in planning."
           />
           <Accordion
             title="Prospects and targets"
             active={active}
             setActive={setActive}
-            content="
-        5. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+            content="My traget is to increase my React &amp; JacaScript knowledge to a high level. In the long run, I would like to work in the frontend.
+
+            The next projects are in the app development area. In addition, a few Java-based projects will follow.
+            
+            This website should also develop continuously: multi language is planned &amp; a darkmode will be implimented.
+            Also, more blog articles on my various projects will follow."
           />
         </div>
       </div>
