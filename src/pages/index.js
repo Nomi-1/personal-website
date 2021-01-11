@@ -70,13 +70,13 @@ const IndexPage = props => {
                 <br />
                 <br />
                 In addition to this task, I work on the UX/UI optimisation of
-                the CMS and the presets. User-friendliness is always in the
+                the CMS. User-friendliness is always in the
                 foreground.
               </p>
             </div>
             <div className={indexStyle.threecolumns}>
               <p>
-                <strong>Privat Projects:</strong> My private projects are mostly concerned with the creation of websites. I like to try out new CMS systems and website builders. This gives me a good overview of the market and always provides me with inspiration for UX/UI solutions.
+                <strong>Privat Projects:</strong> My private projects are mostly concerned with the creation of websites. I like to test new CMS systems and website builders. This gives me a good overview of the market and always provides me with inspiration for UX/UI solutions.
 
                 <br />
                 <br />
