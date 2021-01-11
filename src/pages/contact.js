@@ -11,7 +11,7 @@ const Contact = () => {
       <div className={contactStyle.contact}>
       <h1>This is my contact page</h1>
       <h2>This page is literally useless. But nevertheless it will exist.</h2>
-      <a href="mailto:schoppanaomi94@gmail.com">Text me here</a>
+      <a href="mailto:schoppanaomi94@gmail.com">get in touch</a>
       </div>
     </Layout>
   )
