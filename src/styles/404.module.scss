@@ -1,0 +1,19 @@
+@import "boilerplate.scss";
+
+.error{
+    @include page-width;
+    flex-direction: column;
+    h1{
+       font-size: 4rem;
+       color: rgba(white, 0);
+       -webkit-text-stroke-width: 1px;
+       -webkit-text-stroke-color:  $color-primary;
+       margin-bottom: 2rem;
+
+    }
+   
+    p{
+        width: 100%;
+        text-align: left;
+    }
+}
