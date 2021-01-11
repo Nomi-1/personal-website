@@ -52,7 +52,6 @@
           text-decoration: none;
           font-weight: 400;
           text-transform: uppercase;
-          letter-spacing: 1px;
           transition: $transition-base;
           position: relative;
           font-size: 1.2rem;
@@ -88,7 +87,6 @@
         color: $color-primary;
         text-decoration: none;
         font-weight: 400;
-        letter-spacing: 1px;
 
         &:before {
           opacity: 1;
@@ -102,12 +100,7 @@
   @media screen and(max-width: 720px) {
   nav ul > li a {
       font-size: 1rem;
-      letter-spacing: 0px;
     }
   }
-  nav ul {
-    [aria-current]:not([aria-current="false"]) {
-      letter-spacing: 0px;
-    }
-  }
+
 }
