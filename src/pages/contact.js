@@ -10,7 +10,7 @@ const Contact = () => {
       <Head title="Contact" />
       <div className={contactStyle.contact}>
       <h1>This is my contact page</h1>
-      <h2>This page is literally useless. But nevertheless it will exist.</h2>
+      <h2>On this website I present my private &amp; study projects.<br />It is not for commercial purposes.</h2>
       <a href="mailto:schoppanaomi94@gmail.com">get in touch</a>
       </div>
     </Layout>

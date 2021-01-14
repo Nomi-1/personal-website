@@ -28,7 +28,6 @@ body {
   }
   @media screen and(max-width: 720px) {
     margin: 85px 0rem 0rem 0rem;
-
   }
 }
 article,
@@ -108,7 +107,7 @@ a {
     text-decoration: underline;
   }
 }
-ol{
+ol {
   margin: 0px;
 }
 table {
@@ -157,7 +156,7 @@ img {
   display: flex;
   flex-direction: initial;
   justify-content: space-between;
-   >.inner {
+  > .inner {
     flex-basis: calc(50% - 2rem);
     flex-grow: 0;
     flex-shrink: 0;
@@ -171,7 +170,7 @@ img {
   @media screen and(max-width: 720px) {
     flex-wrap: wrap;
 
-    >.inner {
+    > .inner {
       flex-basis: calc(100% - 2rem);
     }
   }
@@ -247,7 +246,7 @@ img {
   height: 0;
   opacity: 0;
   display: flex;
-  transition: all 1s cubic-bezier(0,1,0,1);
+  transition: all 1s cubic-bezier(0, 1, 0, 1);
   overflow: hidden;
   .accordionInner {
     white-space: pre-wrap;
@@ -266,9 +265,9 @@ img {
     }
     @media screen and(max-width: 940px) {
       height: 460px;
-      }
+    }
     @media screen and(max-width: 720px) {
-    height: 1050px;
+      height: 1050px;
     }
   }
 }
@@ -282,5 +281,42 @@ img {
   }
   .accordionContent .accordionInner {
     margin-bottom: 0rem;
+  }
+}
+
+// BLOG POST
+.column-blog {
+  @include columns;
+  margin: 1rem 0rem;
+  > .inner {
+    flex-basis: calc(50% - 1rem);
+    padding: 0px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    background: $gray-lighter;
+  }
+
+  pre {
+    margin: 0px;
+    padding: 1rem;
+  }
+  h4 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $color-primary;
+    flex-grow: 0;
+    background: white;
+    flex-basis: auto;
+  }
+  @media screen and(max-width: 720px) {
+    flex-direction: column;
+
+    > .inner:not(:first-child) {
+      margin-top: 15px;
+    }
   }
 }

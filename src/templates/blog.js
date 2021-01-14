@@ -45,9 +45,15 @@ const Blog = props => {
             <Link to="/blog">back to Blog</Link>
           </button>
         </div>
-        <div className={blogpostStyle.content}
+        <div
+          className={blogpostStyle.content}
           dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
         ></div>
+        <div className={blogpostStyle.button}>
+          <button>
+            <Link to="/blog">back to Blog</Link>
+          </button>
+        </div>
       </div>
     </Layout>
   )

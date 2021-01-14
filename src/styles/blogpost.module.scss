@@ -1,6 +1,7 @@
 @import "boilerplate.scss";
 .page {
   @include page-width;
+  margin-bottom: calc(#{$horizontal-margin} - 4rem);
   flex-flow: column wrap;
   .title {
     display: flex;
@@ -12,7 +13,7 @@
     align-content: center;
     padding-bottom: 2rem;
     border-bottom: 1px solid $gray-light;
-    margin-bottom: 2rem;
+    //margin-bottom: 2rem;
     h1 {
       font-size: 1.75rem;
       line-height: 2rem;
@@ -36,6 +37,14 @@
   ol {
     padding-left: 1rem;
     margin: 1rem 0;
+    &,
+    * {
+      font-family: $font-default;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1.5rem;
+    }
   }
   h2 {
     margin-top: 15px;
@@ -46,7 +55,7 @@
     margin-bottom: 0px;
   }
   h3 {
-    margin-top: 15px;
+    margin-top: 32px;
     font-size: 1.3rem;
     text-transform: uppercase;
     font-weight: 300;
@@ -63,7 +72,9 @@
   display: flex;
   justify-content: flex-start;
   width: 100%;
+  margin-top: 2.5rem;
   margin-bottom: 1.5rem;
+
   button {
     background: white;
     padding: 10px 5px;
@@ -87,9 +98,4 @@
       }
     }
   }
-}
-pre {
-  background: $gray-lighter;
-  padding: 1rem;
-  margin: 20px 0;
 }
