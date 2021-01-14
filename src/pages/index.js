@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import "../styles/boilerplate.scss"
 import Head from "../components/head"
 import indexStyle from "../styles/index.module.scss"
-import { FaChevronRight } from "@react-icons/all-files/fa/FaChevronRight"
 import background from "../images/background_home.jpg"
 
 const IndexPage = props => {
@@ -35,10 +34,7 @@ const IndexPage = props => {
           Gatsby which is based on react.
           <br /> <br />
           If you want more information about me, you can visit my GitHub with my
-          projects or LinkedIn for my CV. Or just stay here and{" "}
-          <Link to="/about">
-            discover more <FaChevronRight />
-          </Link>
+          projects or LinkedIn for my CV. Or just stay here and <Link to="/about">discover more</Link>.
         </p>
       </div>
       <div

@@ -3,6 +3,7 @@
 .contact{
     @include page-width;
     flex-direction: column;
+    align-items: flex-start;
     h1{
         margin-bottom: 0px;
     }
@@ -10,7 +11,5 @@
         font-size: 1rem;
         font-weight: 300;
     }
-    a{
-        width: 100%;
-    }
+ 
 }

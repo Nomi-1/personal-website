@@ -38,28 +38,26 @@
     border: 1px solid $gray-light;
     display: flex;
     justify-content: space-between;
-    /*&:not(:last-child) {
-      margin-bottom: 1rem;
-    }*/
 
     div {
       padding: 1rem;
     }
     div:nth-child(2) {
-      background: black;
+    //  background: $gray-lighter;
+      border-left: 1px solid $gray-light;
       display: flex;
       align-items: center;
       transition: $transition-base;
       a {
-        color: white;
+      //  color: white;
         font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 1px;
       }
       &:hover {
-        background: $color-primary;
+       // background: $color-primary;
         a {
-          text-decoration: none;
+         // text-decoration: none;
         }
       }
     }
