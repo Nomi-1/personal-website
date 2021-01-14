@@ -151,6 +151,10 @@ img {
     &:hover{
       color: white;
     }
+    &::before{
+      width: 0px;
+      height: 0px;
+    }
   }
 }
 
