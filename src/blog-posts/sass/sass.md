@@ -27,7 +27,6 @@ Code example:
 <div class="inner">
 
 #### SASS
-<div class="backgroundstyle"> 
 
 
 ```
@@ -41,7 +40,6 @@ h2{
 
 
 ```
-</div>
 </div>
 <div class="inner"> 
 
@@ -120,18 +118,94 @@ ol li{
 ### Mixins
 In a mixin you can bundle different CSS commands and bring them in whenever you need them. This way you can avoid repeating the same code.
 
+<br />
+
 As an example I use mixins in my project for the "columns". I can import the mixin with the command @include columns 
 and don't have to use the whole CSS again and again. 
+
+<br />
 
 In the preset development mixins are indispensable. Because every preset has its own mixin, which is imported when using. My example will be relatively simple, but the bigger the preset, the more complex the mixin will be. 
 Depending on the preset settings of course.
 
+<br />
 Code example:
 
-### Operators & Flow Control
-SASS supports some of these operators, e.g. (Equality, String, Boolean ...). In the preset development these are not to be thought away any more. Especially if you use the operators with Flow Control (if/else ...). As soon as you build a variable based SASS, which is a bit more complex, you need these possibilities. Especially for projects that offer many parameter settings. 
+<div class="column-blog">
+<div class="inner">
 
+#### SASS
+
+
+```
+@mixin darkstyle {
+  background: black;
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white;
+  }
+}
+
+.column{
+    @include darkstyle;
+}
+
+
+```
+</div>
+<div class="inner"> 
+
+#### CSS
+```
+.column {
+  background: black;
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white;
+  }
+}
+
+```
+
+</div>
+</div>
+
+### Flow Control
+SASS supports Flow Control (if/else ...). As soon as you build a variable based SASS, which is a bit more complex, you need these possibilities. Especially for projects that offer many parameter settings. 
+
+<br />
 Code example:
+
+<div class="column-blog">
+<div class="inner">
+
+#### SASS
+
+
+```
+@if type-of($background) == color {
+    background: $background;
+}
+@else{
+    background: none;
+}
+
+
+```
+</div>
+</div>
 
 ### Results
 Although SASS sometimes has its limitations, I wouldn't want to miss this way of writing CSS. This extended CSS language
@@ -139,6 +213,11 @@ offers a lot of possibilities to bring your CSS to the next level. Especially fo
 or CMS system SASS makes sense. SASS offers us web developers a lot of great possibilities, which I like to use every day. 
 I also like to fall back on.
 
+<br />
+
+
 You want to learn more - the SASS website offers a really great overview of the possibilities and implementations. 
+
+<br />
 
 If you want to build more complex mixins or functions, I can recommend the Sass Meister. This is the SASS-Playground, which is also used by me the the one or other time.
