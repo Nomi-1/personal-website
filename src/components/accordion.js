@@ -2,7 +2,6 @@ import React from "react"
 import "../styles/boilerplate.scss"
 
 const Accordion = ({ title, active, setActive, content }) => {
-  
   return (
     <div className="accordion">
       <div className={(active === title ? "active" : "") + " accordionTrigger"}>
@@ -15,7 +14,13 @@ const Accordion = ({ title, active, setActive, content }) => {
       </div>
 
       <div className={(active === title ? "active" : "") + " accordionContent"}>
-        <div className="accordionInner"><p>{content}</p></div>
+       <div className="accordionInner">
+          {content.split("\n").map((item, i) => {
+            return (
+              <p key={i}>{item}</p>
+            )
+          })}
+       </div>
       </div>
     </div>
   )
