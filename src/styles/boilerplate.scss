@@ -11,6 +11,7 @@ $transition-base: all 0.3s ease-in-out;
 $content-width: 61rem;
 $horizontal-margin: 6rem;
 $horizontal-margin-md: 4rem;
+$dark-link-color: #c4d5e4;
 
 // STYLE SHEET
 // html-import fonts
@@ -147,7 +148,7 @@ img {
     color: white;
   }
   a {
-    color: #a1a1a1;
+    color: $dark-link-color;
     &:hover{
       color: white;
     }

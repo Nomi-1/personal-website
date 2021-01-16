@@ -33,7 +33,6 @@ const BlogPage = () => {
           blog. I also use this page to present my projects. I can
           consolidate and repeat my knowledge in this way. If you have any
           questions or comments, please feel free to contact me.{" "}
-          <Link to="/contact">Contact</Link>
         </p>
       </div>
       <div className={blogStyle.blog}>
