@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import aboutStyle from "../styles/about.module.scss"
 import Layout from "../components/layout"
 import Head from "../components/head"
@@ -73,19 +74,21 @@ const About = () => {
             title="Project: Static Website"
             active={active}
             setActive={setActive}
-            content={ "The portfolio page was created with »gatsbyjs«. Besides Next.js, Hugo, Jekyll etc., Gatsby is a static site generator. Some generators are based on Go, however my goal is to learn React, so for this project I decided to use Gatsby.\n \nRead more about it in the blogpost., This page was created with the »Hello Starter« provided by Gatsby. In the beginning there were problems with the »npm-sass install«, but this could be solved well by installing SASS in general.\nThe handling and workaround was exciting. I learned to work with components and tried to replace JQuery applications like toggle behaviour with react commands. Through graphql you have the possibility to output different content dynamically, which is super handy. For the blogposts I implemented Markdown, because further editing is easier with Markdown than with HTML. The slugs are created automatically based on the file title. When you create a new blog post (.md), everything is automatically added to the blog page and a new page is created.\nSASS was used for the style. It is generally easier to use than normal CSS - but you can read about that in the blog. The programming languages used in this project are React and Sass." }
+            content={ "The portfolio page was created with »gatsbyjs«. Besides Next.js, Hugo, Jekyll etc., Gatsby is a static site generator. Some generators are based on Go, however my goal is to learn React, so for this project I decided to use Gatsby.\nThis page was created with the »Hello Starter« provided by Gatsby. In the beginning there were problems with the »npm-sass install«, but this could be solved well by installing SASS in general.\nThe handling and workaround was exciting. I learned to work with components and tried to replace JQuery applications like toggle behaviour with react commands.\nThrough graphql you have the possibility to output different content dynamically, which is super handy. For the blogposts I implemented Markdown, because further editing is easier with Markdown than with HTML. The slugs are created automatically based on the file title. When you create a new blog post (.md), everything is automatically added to the blog page and a new page is created.\nSASS was used for the style. It is generally easier to use than normal CSS. \n  \nThe programming languages used in this project are React and Sass." }
+            link={ <p><br />You can learn more about this topic in my <Link to="/blog">Blog</Link>.</p> }
           />
           <Accordion
             title="Project: SASS"
             active={active}
             setActive={setActive}
             content={ "I have been working on various SASS projects for several years. The complexity is as different as the projects themselves. Even if the setup seems quite complex, it also makes sense to use SASS in all projects, also smaller projects. Because in summer, the time savings, achieved through nesting and mixin is immensely high. SASS for presets can become very complex. Since they build presets purely on variables. The parameters are assigned via the CMS." }
+            link={ <p><br />You can learn more about this topic in my <Link to="/blog">Blog</Link>.</p> }
           />
           <Accordion
             title="Project: UX"
             active={active}
             setActive={setActive}
-            content={ "In a team of four people we develop an app interface with the UX concept from »Contextual Design« by Karen Holtzblatt.\nThe concept idea arises from intensive follow up with the consumers »method of work« in this topic. We critically question which function the user needs.\nOnce the concept has been established, the team starts work on it. The interface concept goes through various steps and optimisation loops.\nBy critically questioning the usefulness of the app and the planned functions and features from step one, the final product will be user-friendly and not overloaded with functions, which makes it easy to use.\nThe interface is tested and optimised again and again during the development process, e.g. through paper prototyping.\n \nA detailed blog post on for this project is in planning. "}
+            content={ "In a team of four people we develop an app interface with the UX concept from »Contextual Design« by Karen Holtzblatt.\nThe concept idea arises from intensive follow up with the consumers »method of work« in this topic. We critically question which function the user needs.\nOnce the concept has been established, the team starts work on it. The interface concept goes through various steps and optimisation loops.\nBy critically questioning the usefulness of the app and the planned functions and features from step one, the final product will be user-friendly and not overloaded with functions, which makes it easy to use.\nThe interface is tested and optimised again and again during the development process, e.g. through paper prototyping.\n \nA detailed blog post on for this project is in planning."}
           />
           <Accordion
             title="Prospects and targets"

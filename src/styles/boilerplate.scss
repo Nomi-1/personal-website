@@ -266,12 +266,15 @@ img {
   &:not(:last-child) {
     margin-bottom: 1rem;
   }
+  @media screen and(max-width: 350px) {
+    span{display: none;}
+  }
 }
 .accordionContent {
   height: 0;
   opacity: 0;
   display: flex;
-  transition: all 1s cubic-bezier(0, 1, 0, 1);
+ // transition: all 1s cubic-bezier(0, 1, 0, 1);
   overflow: hidden;
   .accordionInner {
     white-space: pre-wrap;
@@ -283,16 +286,10 @@ img {
   }
 
   &.active {
-    height: 375px;
+    height: 100%;
     opacity: 1;
     .accordionInner {
       margin-bottom: 1rem;
-    }
-    @media screen and(max-width: 940px) {
-      height: 460px;
-    }
-    @media screen and(max-width: 720px) {
-      height: 1050px;
     }
   }
 }

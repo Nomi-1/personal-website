@@ -1,7 +1,7 @@
 import React from "react"
 import "../styles/boilerplate.scss"
 
-const Accordion = ({ title, active, setActive, content }) => {
+const Accordion = ({ title, active, setActive, content, link }) => {
   return (
     <div className="accordion">
       <div className={(active === title ? "active" : "") + " accordionTrigger"}>
@@ -20,6 +20,7 @@ const Accordion = ({ title, active, setActive, content }) => {
               <p key={i}>{item}</p>
             )
           })}
+          {link}
        </div>
       </div>
     </div>
