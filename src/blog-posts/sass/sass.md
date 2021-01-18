@@ -17,7 +17,7 @@ date: "11.01.2021"
 Cascading Style Sheets (CSS) is one of the most important languages in web development. It defines the style of a website. However, the writing of CSS is laborious and for more complex work, the sheets become quite large. SASS is a CSS extension that makes writing and maintenance much easier. But it also has important features like variables, nesting, mixins and inheritance. After learning how to use it, writing CSS becomes noticeably quick and tidy.
 
 ### Advantages & creation of variables
-Variables have super many advantages. Of course, creating the variables is work at first, but later you only have advantages. If you create variables for the colours or website sizes, revising them later becomes much easier and faster. Assuming the colours of the website are to be changed, the HEX code only needs to be changed in one place. I collect my general variables in my boilerplate. 
+Variables have super many advantages. Of course, creating the variables is quite a lot of work at first, but later you only have advantages. If you create variables for the colours or website sizes, revising them later becomes much easier and faster. Assuming the colours of the website are to be changed, the HEX code only needs to be changed in one place. I collect my general variables in my boilerplate.
 
 <br />
 
@@ -120,13 +120,11 @@ In a mixin you can bundle different CSS commands and bring them in whenever you 
 
 <br />
 
-As an example I use mixins in my project for the "columns". I can import the mixin with the command @include columns 
-and don't have to use the whole CSS again and again. 
+As an example, I use mixins in my project for the "columns". I can import the mixin with the command @include columns and don't have to use the whole CSS again and again.
 
 <br />
 
-In the preset development mixins are indispensable. Because every preset has its own mixin, which is imported when using. My example will be relatively simple, but the bigger the preset, the more complex the mixin will be. 
-Depending on the preset settings of course.
+In the preset development mixins are indispensable. Because every preset has its own mixin, which is imported when using. My example will be relatively simple, but the bigger the preset, the more complex the mixin will be. Depending on the preset settings of course.
 
 <br />
 Code example:
@@ -183,7 +181,7 @@ Code example:
 </div>
 
 ### Flow Control
-SASS supports Flow Control (if/else ...). As soon as you build a variable based SASS, which is a bit more complex, you need these possibilities. Especially for projects that offer many parameter settings. 
+SASS supports Flow Control (if/else ...). As soon as you build a variable based SASS, which is a bit more complex, you need these possibilities. Especially for projects that offer many parameter settings.
 
 <br />
 Code example:
@@ -208,16 +206,12 @@ Code example:
 </div>
 
 ### Results
-Although SASS sometimes has its limitations, I wouldn't want to miss this way of writing CSS. This extended CSS language
-offers a lot of possibilities to bring your CSS to the next level. Especially for large, complex projects or 
-or CMS system SASS makes sense. SASS offers us web developers a lot of great possibilities, which I like to use every day. 
-I also like to fall back on.
+Although SASS sometimes has its limitations, I wouldn't want to miss this way of writing CSS. This extended CSS language offers a lot of possibilities to bring your CSS to the next level. Especially for large, complex projects or CMS system SASS makes sense. SASS offers us web developers a lot of great possibilities, which I like to use every day. I also like to fall back on.
 
 <br />
 
-
-You want to learn more - the SASS website offers a really great overview of the possibilities and implementations. 
+The SASS website offers a really great overview of the possibilities and implementations.
 
 <br />
 
-If you want to build more complex mixins or functions, I can recommend the Sass Meister. This is the SASS-Playground, which is also used by me the the one or other time.
+If you want to build more complex mixins or functions, I can recommend the Sass Meister. This is the SASS-Playground, which is also used by me the one or other time.

@@ -29,10 +29,10 @@ const BlogPage = () => {
         <h1>A Blog about Frontend Developement</h1>
         <p>
           My projects give me different insights into languages, extensions and
-          systems. Therefore, I would like to summarise my results, pros &amp; cons in this
-          blog. I also use this page to present my projects. I can
+          systems. Therefore, I would like to summarise my results, pros &amp;
+          cons in this blog. I also use this page to present my projects. I can
           consolidate and repeat my knowledge in this way. If you have any
-          questions or comments, please feel free to contact me.{" "}
+          questions or comments, please feel free to contact me.
         </p>
       </div>
       <div className={blogStyle.blog}>
