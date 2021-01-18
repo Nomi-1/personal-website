@@ -1,0 +1,10 @@
+name: Run Test
+on: push
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+#ich möchste auf Betriebssystem ubuntu arbeiten  unbunu console geöffnet
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npm run test
