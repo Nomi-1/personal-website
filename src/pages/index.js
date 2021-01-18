@@ -35,7 +35,7 @@ const IndexPage = props => {
           >
             Media Informatics
           </a>
-          &laquo; at the University of Applied Sciences(HTW) in Berlin. Besides
+          &laquo; at the University of Applied Sciences (HTW) in Berlin. Besides
           my studies I work as a web designer &amp; web developer for{" "}
           <a
             href="https://www.sitejet.io/en"
@@ -46,10 +46,6 @@ const IndexPage = props => {
             Sitejet
           </a>
           .
-          <br /> <br />
-          My main skills are CSS, SASS and HTML. I am also currently studying
-          Java, Java Script and React. This portfolio page is created with
-          Gatsby which is based on react.
           <br /> <br />
           My main skills are CSS, SASS and HTML. I am currently studying Java,
           Java Script and React. This portfolio page is created with Gatsby
