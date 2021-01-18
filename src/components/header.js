@@ -7,11 +7,6 @@ const Header = () => {
     <div className={headerStyle.position}>
     <header className={headerStyle.menuLevelNull}>
       <nav>
-       {/* <h2>
-          {" "}
-          <Link to="/">
-            Schoppa          </Link>
-        </h2>*/}
         <ul>
           <li>
             <Link to="/">Home</Link>
